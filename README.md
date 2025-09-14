@@ -33,3 +33,13 @@ Detailed reasoning for each OS guess
 Confidence percentages
 Export to JSON/CSV formats
 Visual formatting for human readability
+
+
+# Scan with consent for authorized target
+python scanner.py 192.168.1.1 --consent
+
+# Custom port range
+python scanner.py 10.0.0.1 -p 80,443,8080 --consent
+
+# Export results
+python scanner.py target.com --consent --export json
